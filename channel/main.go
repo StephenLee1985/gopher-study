@@ -21,7 +21,13 @@ func selectRand() {
 	}
 }
 
+const (
+	RepoGit = iota
+	RepoSvn
+)
+
 func main() {
+	fmt.Println("", RepoGit, " ", RepoSvn)
 	selectRand()
 	fmt.Println("chen")
 }
